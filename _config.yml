@@ -1,7 +1,7 @@
 # Site settings
-title: PHOTORAMA1
+title: PHOTOFOLIO
 email: "cmutsites@gmail.com"
-description: "Photo Journal"
+description: "Photography Portfolio"
 url: "https://cmutnik.github.io"
 baseurl: "/photofolio"
 facebook_username: ""
