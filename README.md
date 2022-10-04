@@ -1,11 +1,12 @@
-p h o t o r a m a 
+p h o t o f o l i o
 ====================
 
-![photorama](https://raw.githubusercontent.com/sunbliss/photorama/gh-pages/photorama_thumb.gif)
+<!-- ![photorama](https://raw.githubusercontent.com/sunbliss/photorama/gh-pages/photorama_thumb.gif) -->
 
 ----------
 
----> [DEMO](https://sunbliss.github.io/photorama/ "DEMO")  <---
+---> [My Demo](https://cmutnik.github.io/photofolio/ "DEMO")  <---<br>
+---> [Original Creators Demo](https://sunbliss.github.io/photorama/ "DEMO")  <---
 
 ----------
 
