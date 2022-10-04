@@ -1,7 +1,7 @@
 # Site settings
 title: PHOTOFOLIO
-email: "cmutsites@gmail.com"
-description: "Tako's Photo Portfolio"
+email: ""
+description: "Tako Photo Portfolio"
 url: "https://cmutnik.github.io"
 baseurl: "/photofolio"
 facebook_username: ""
@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://cmutnik.github.io/photorama/gallery/"  
-  - JOURNAL: "https://cmutnik.github.io/photorama/journal/"
-  - ABOUT: "https://cmutnik.github.io/photorama/about/"
+  - GALLERY: "https://cmutnik.github.io/photofolio/gallery/"  
+  - JOURNAL: "https://cmutnik.github.io/photofolio/journal/"
+  - ABOUT: "https://cmutnik.github.io/photofolio/about/"
 
 # All translation keys
 translations:
