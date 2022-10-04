@@ -1,7 +1,7 @@
 # Site settings
-title: PHOTOFOLIO
+title: PHOTORAMA1
 email: ""
-description: "Tako Photo Portfolio"
+description: "Photo Journal"
 url: "https://cmutnik.github.io"
 baseurl: "/photofolio"
 facebook_username: ""
@@ -18,7 +18,7 @@ owner:
   name:   photofolio
   avatar: avatar.png
   favicon: favicon.ico
-  info: photography portfolio template
+  info: photography website template
 
 # Settings for comments helper
 # Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
