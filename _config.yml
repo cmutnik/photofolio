@@ -1,5 +1,5 @@
 # Site settings
-title: photofolio
+title: PHOTOFOLIO
 email: ""
 description: "Tako Photo Portfolio"
 url: "https://cmutnik.github.io"
@@ -15,7 +15,7 @@ share: true
 
 # Owner/author information
 owner:
-  name:   tako
+  name:   photofolio
   avatar: avatar.png
   favicon: favicon.ico
   info: photography portfolio template
