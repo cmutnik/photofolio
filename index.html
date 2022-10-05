@@ -77,23 +77,6 @@ images:
 
 <div id="footer" role="contentinfo">
 		<ul class="soc-icons">
-
-                 {% if site.facebook_username %}
-			<li>
-   <a href="https://facebook.com/{{ site.facebook_username }}" style="
-color:#dddddd; target="_blank" title="Facebook">
-                       <i class="fa fa-facebook"></i>
-                     </span>
-</a></li>
-    {% endif %}
- <!-- {% if site.twitter_username %}
-			<li>
-   <a href="https://twitter.com/{{ site.twitter_username }}" style="
-color:#dddddd; target="_blank" title="Twitter">
-                       <i class="fa fa-twitter"></i>
-                     </span>
-</a></li>
-    {% endif %} -->
                 {% if site.instagram_username %}
 			<li>
    <a href="https://instagram.com/{{ site.instagram_username }}" style="
@@ -102,157 +85,85 @@ color:#dddddd; target="_blank" title="Instagram">
                      </span>
 </a></li>
     {% endif %}
+    
+                 {% if site.facebook_username %}
+			<li>
+   <a href="https://facebook.com/{{ site.facebook_username }}" style="
+color:#dddddd; target="_blank" title="Facebook">
+                       <i class="fa fa-facebook"></i>
+                     </span>
+</a></li>
+    {% endif %}
+<!-- {% if site.twitter_username %}
+			<li><a href="https://twitter.com/{{ site.twitter_username }}" style="color:#dddddd; target="_blank" title="Twitter"><i class="fa fa-twitter"></i></span></a></li>
+    {% endif %} -->
                     {% if site.instagram_username_nft %}
 			<li>
    <a href="https://instagram.com/{{ site.instagram_username_nft }}" style="
 color:#dddddd; target="_blank" title="InstagramNFT">
-                       <i class="fa fa-btc"></i>
+                       <i class="fa fa-camera-retro"></i>
                      </span>
 </a></li>
     {% endif %}
-                    {% if site.other_url_passed %}
-			<li>
-   <a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="Instagram2">
-                       <i class="fa fa-instagram"></i>
-                     </span>
-</a></li>
-    {% endif %}    
-                        {% if site.other_url_passed %}
-			<li>
-   <a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="camera">
-                       <i class="fa fa-camera"></i>
-                     </span>
-</a></li>
-    {% endif %}    
-    {% if site.other_url_passed %}
-    <li>
- <a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="cameraretro">
-                     <i class="fa fa-camera-retro"></i>
-                   </span>
-</a></li>
-  {% endif %}    
-
-
-
-
-
-
-
-
-  {% if site.instagram_username_nft %}
-  <li>
-<a href="https://instagram.com/{{ site.instagram_username_nft }}" style="
-color:#dddddd; target="_blank" title="edge3">
-                   <i class="fa fa-edge"></i>
-                 </span>
-</a></li>
-{% endif %}
-                {% if site.other_url_passed %}
-  <li>
-<a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="connectdevelo3p">
-                   <i class="fa fa-internet-explorer"></i>
-                 </span>
-</a></li>
-{% endif %}    
-                    {% if site.other_url_passed %}
-  <li>
-<a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="camera3">
-                   <i class="fa fa-file-excel-o"></i>
-                 </span>
-</a></li>
-{% endif %}    
-{% if site.other_url_passed %}
-<li>
-<a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="cameraretro4">
-                 <i class="fa fa-eyedropper"></i>
-               </span>
-</a></li>
-{% endif %}    
-
 
 <!-- 
-fa-edge
-fa-connectdevelop
-fa-internet-explorer [&#xf26b;]
-fa-file-excel-o [&#xf1c3;]
-fa-eyedropper [&#xf1fb;]
-fa-first-order [&#xf2b0;]
-fa-flask [&#xf0c3;]
-fa-github-square [&#xf092;]
-fa-handshake-o [&#xf2b5;]
-fa-usb [&#xf287;]
-fa-space-shuttle [&#xf197;]
-fa-fighter-jet [&#xf0fb;]
-fa-codepen [&#xf1cb;]
-fa-bitcoin (alias) [&#xf15a;] -->
+  <i class="fa fa-camera"></i>
+  <i class="fa fa-file-excel-o"></i>
+  <i class="fa fa-edge"></i>
+  <i class="fa fa-internet-explorer"></i>
+  <i class="fa fa-eyedropper"></i> 
+  <i class="fa fa-usb"></i>
+-->
+
+<!-- 
+  fa-btc
+  fa-edge
+  fa-connectdevelop
+  fa-internet-explorer [&#xf26b;]
+  fa-file-excel-o [&#xf1c3;]
+  fa-eyedropper [&#xf1fb;]
+  fa-first-order [&#xf2b0;]
+  fa-flask [&#xf0c3;]
+  fa-github-square [&#xf092;]
+  fa-handshake-o [&#xf2b5;]
+  fa-usb [&#xf287;]
+  fa-space-shuttle [&#xf197;]
+  fa-fighter-jet [&#xf0fb;]
+  fa-codepen [&#xf1cb;]
+  fa-bitcoin (alias) [&#xf15a;] 
+  fa-deviantart
+  fa-flickr
+-->
 
 
-{% if site.instagram_username_nft %}
-<li>
-<a href="https://instagram.com/{{ site.instagram_username_nft }}" style="
-color:#dddddd; target="_blank" title="bitcoin">
-                 <i class="fa fa-bitcoin"></i>
-               </span>
-</a></li>
-{% endif %}
               {% if site.other_url_passed %}
 <li>
 <a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="codepencodepen">
+color:#d09b08; target="_blank" title="codepencodepen">
                  <i class="fa fa-codepen"></i>
                </span>
 </a></li>
 {% endif %}    
-{% if site.instagram_username_nft %}
+
+{% if site.opensea_collection1 %}
 <li>
-<a href="https://instagram.com/{{ site.instagram_username_nft }}" style="
-color:#dddddd; target="_blank" title="handshakeo">
-                 <i class="fa fa-handshake-o"></i>
+  <a href="https://opensea.io/collection/{{ site.opensea_collection1 }}" style="
+color:#d09b08; target="_blank" title="flaskscience">
+                 <i class="fa fa-flask"></i>
                </span>
 </a></li>
 {% endif %}
-              {% if site.other_url_passed %}
+
+{% if site.opensea_collection2 %}
 <li>
-<a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="usb">
-                 <i class="fa fa-usb"></i>
+  <a href="https://opensea.io/collection/{{ site.opensea_collection2 }}" style="
+color:#d09b08; target="_blank" title="fighterjet">
+                 <i class="fa fa-fighter-jet"></i>
                </span>
 </a></li>
-{% endif %}    
-                  {% if site.other_url_passed %}
-<li>
-<a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="spaceshuttle">
-                 <i class="fa fa-space-shuttle"></i>
-               </span>
-</a></li>
-{% endif %}    
-{% if site.other_url_passed %}
-<li>
-<a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="fighterjet">
-               <i class="fa fa-fighter-jet"></i>
-             </span>
-</a></li>
-{% endif %}   
+{% endif %}
 
-
-
-
-
-
-
-
-
-
-
-{% if site.instagram_username_nft %}
+              {% if site.instagram_username_nft %}
 <li>
 <a href="https://instagram.com/{{ site.instagram_username_nft }}" style="
 color:#dddddd; target="_blank" title="eyedropper">
@@ -260,6 +171,7 @@ color:#dddddd; target="_blank" title="eyedropper">
                </span>
 </a></li>
 {% endif %}
+
               {% if site.other_url_passed %}
 <li>
 <a href="https://{{ site.other_url_passed }}" style="
@@ -268,41 +180,11 @@ color:#dddddd; target="_blank" title="firstorder">
                </span>
 </a></li>
 {% endif %}    
-                  {% if site.other_url_passed %}
-<li>
-<a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="flask">
-                 <i class="fa fa-flask"></i>
-               </span>
-</a></li>
-{% endif %}    
-{% if site.other_url_passed %}
-<li>
-<a href="https://{{ site.other_url_passed }}" style="
-color:#dddddd; target="_blank" title="githubsq">
-               <i class="fa fa-github-square"></i>
-             </span>
-</a></li>
-{% endif %}    
+
+  
 
 
-
-                    <!-- {% if site.flickr_username %}
-						<li>
-   <a href="https://flickr.com/photos/{{ site.flickr_username }}" style="
-color:#dddddd; target="_blank" title="Flickr">
-              <i class="fa fa-flickr"></i>
-                     </span>
- </a></li>	
-     {% endif %}
-                    {% if site.deviantart_username %}
-			<li>
-   <a href="http://{{ site.deviantart_username }}.deviantart.com" style="
-color:#dddddd; target="_blank" title="DeviantArt">
-<i class="fa fa-deviantart"></i> </span>
-</a></li>	
-    {% endif %} -->
-                    {% if site.github_username %}
+              {% if site.github_username %}
                 <li>
    <a href="https://github.com/{{ site.github_username }}" style="
 color:#dddddd; target="_blank" title="Github">
