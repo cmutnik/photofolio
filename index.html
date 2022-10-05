@@ -86,14 +86,14 @@ color:#dddddd; target="_blank" title="Facebook">
                      </span>
 </a></li>
     {% endif %}
- {% if site.twitter_username %}
+ <!-- {% if site.twitter_username %}
 			<li>
    <a href="https://twitter.com/{{ site.twitter_username }}" style="
 color:#dddddd; target="_blank" title="Twitter">
                        <i class="fa fa-twitter"></i>
                      </span>
 </a></li>
-    {% endif %}
+    {% endif %} -->
                 {% if site.instagram_username %}
 			<li>
    <a href="https://instagram.com/{{ site.instagram_username }}" style="
@@ -102,7 +102,23 @@ color:#dddddd; target="_blank" title="Instagram">
                      </span>
 </a></li>
     {% endif %}
-                    {% if site.flickr_username %}
+                    {% if site.instagram_username_nft %}
+			<li>
+   <a href="https://instagram.com/{{ site.instagram_username_nft }}" style="
+color:#dddddd; target="_blank" title="InstagramNFT">
+                       <i class="fa fa-btc"></i>
+                     </span>
+</a></li>
+    {% endif %}
+                    {% if site.other_url_passed %}
+			<li>
+   <a href="https://{{ site.other_url_passed }}" style="
+color:#dddddd; target="_blank" title="Instagram2">
+                       <i class="fa fa-instagram"></i>
+                     </span>
+</a></li>
+    {% endif %}    
+                    <!-- {% if site.flickr_username %}
 						<li>
    <a href="https://flickr.com/photos/{{ site.flickr_username }}" style="
 color:#dddddd; target="_blank" title="Flickr">
@@ -116,7 +132,7 @@ color:#dddddd; target="_blank" title="Flickr">
 color:#dddddd; target="_blank" title="DeviantArt">
 <i class="fa fa-deviantart"></i> </span>
 </a></li>	
-    {% endif %}
+    {% endif %} -->
                     {% if site.github_username %}
                 <li>
    <a href="https://github.com/{{ site.github_username }}" style="
