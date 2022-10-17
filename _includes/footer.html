@@ -46,22 +46,42 @@
                         </a>
                     </li>
                     {% endif %}
-                    {% if site.flickr_username %}
+                    {% if site.other_url_passed %}
                     <li>
-                        <a href="https://flickr.com/photos/{{ site.flickr_username }}" data-toggle="tooltip" title="Flickr">
+                        <a href="https://{{ site.other_url_passed }}" data-toggle="tooltip" title="codepencodepen">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-codepen fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
                     {% endif %}
-                    {% if site.deviantart_username %}
+                    {% if site.opensea_collection1 %}
                     <li>
-                        <a href="http://{{ site.deviantart_username }}.deviantart.com">
-                            <span class="fa-stack fa-lg" data-toggle="tooltip" title="Deviantart">
+                        <a href="https://opensea.io/collection/{{ site.opensea_collection1 }}">
+                            <span class="fa-stack fa-lg" data-toggle="tooltip" title="flaskscience">
                                 <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-deviantart fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-flask fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.opensea_collection2 %}
+                    <li>
+                        <a href="https://opensea.io/collection/{{ site.opensea_collection2 }}">
+                            <span class="fa-stack fa-lg" data-toggle="tooltip" title="fighterjet">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-fighter-jet fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.other_site_anti %}
+                    <li>
+                        <a href="https://{{ site.other_site_anti }}" data-toggle="tooltip" title="eyedropper">
+                            <span class="fa-stack fa-lg" data-toggle="tooltip" title="eyedropper">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-eyedropper fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
