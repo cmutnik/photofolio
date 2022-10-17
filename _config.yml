@@ -38,6 +38,7 @@ comments :
 
 # Internal nav
 nav:
+  - HOME: "https://cmutnik.github.io/photofolio/"
   - GALLERY: "https://cmutnik.github.io/photofolio/gallery/"  
   - JOURNAL: "https://cmutnik.github.io/photofolio/journal/"
   - ABOUT: "https://cmutnik.github.io/photofolio/about/"
