@@ -1,4 +1,15 @@
 #!/bin/python
+"""Script for resizing and formatting images, to better display on web.
+    Example use case:
+        ```py
+        python resize.py -i test/* -o test/. -oe webp -sf 0.5
+        ```
+    - convert all images in `test/`
+    - store the outputs in `test/`
+    - scale each image by a factor of 0.5
+    - save output images as `*.webp` files
+"""
+
 from PIL import Image
 from glob import glob
 from tqdm import tqdm
@@ -9,10 +20,14 @@ parser.add_argument("-i", "--img_path", type=str, default=r"./*", metavar="str",
                     help="paths to set of images that need to be resized (default: ./*)")
 parser.add_argument("-o", "--output_dir", type=str, default=r"./", metavar="str",
                     help="dir to save resized image results (default: ./)")
-parser.add_argument("-sf", "--scale_factor", type=float, default=0.25, metavar="float",
-                    help="scale factor to multiply image dimensions by (default: 0.25)")
-parser.add_argument("-oe", "--output_extension", type=str, default="png", metavar="str",
-                    help="extension type of resized image (default: png)")
+# parser.add_argument("-sf", "--scale_factor", type=float, default=0.25, metavar="float",
+#                     help="scale factor to multiply image dimensions by (default: 0.25)")
+# parser.add_argument("-oe", "--output_extension", type=str, default="png", metavar="str",
+#                     help="extension type of resized image (default: png)")
+parser.add_argument("-sf", "--scale_factor", type=float, default=0.1, metavar="float",
+                    help="scale factor to multiply image dimensions by (default: 0.1)")
+parser.add_argument("-oe", "--output_extension", type=str, default="webp", metavar="str",
+                    help="extension type of resized image (default: webp)")
 parser.add_argument("-ee", "--excluded_extensions", action='append', default=["py"], metavar="list of strings",
                     help="list of str that make consists of file extensions to ignore in img_path dir (default: [\"py\"])")
 args = parser.parse_args()
@@ -27,16 +42,27 @@ def get_list_of_input_images(filepath, excluded_extensions):
 def resize_image(image, scale_factor):
     return image.resize( (int(image.size[0]*scale_factor), int(image.size[1]*scale_factor)) )
 
-def save_resized_image(image, filename, output_dir, output_extension):
+def get_final_output_name(filename, output_dir, output_extension):
     output_dir = output_dir if output_dir[-1]=="/" else output_dir + "/"
     basename = filename.split("/")[-1].split(".")[0]
     final_output_name = output_dir + basename + "_resized." + output_extension
-    image.save(final_output_name)
+    return final_output_name
+
+# def save_resized_image(image, final_output_name, make_extension_webp=False):
+#     if make_extension_webp:
+#         image.save(final_output_name, format="webp")
+#     else:
+#         image.save(final_output_name)
+#     return
+def save_resized_image(image, final_output_name, output_extension):
+    image.save(final_output_name, format=output_extension)
 
 if __name__ == "__main__":
+    output_extension = args.output_extension
     make_output_dir_if_it_DNE(args.output_dir)
     filelist = get_list_of_input_images(filepath=args.img_path, excluded_extensions=args.excluded_extensions)
     for filename in tqdm(filelist):
         img = Image.open(filename)
         new_image = resize_image(img, scale_factor=args.scale_factor)
-        save_resized_image(new_image, filename, output_dir=args.output_dir, output_extension=args.output_extension)
+        final_output_name = get_final_output_name(filename, output_dir=args.output_dir, output_extension=output_extension)
+        save_resized_image(new_image, final_output_name, output_extension)
