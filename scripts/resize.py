@@ -15,7 +15,7 @@ from glob import glob
 from tqdm import tqdm
 import argparse, os
 
-parser = argparse.ArgumentParser(description="Resize Images")
+parser = argparse.ArgumentParser(description="Manipulate Images")
 parser.add_argument("-i", "--img_path", type=str, default=r"./*", metavar="str",
                     help="paths to set of images that need to be resized (default: ./*)")
 parser.add_argument("-o", "--output_dir", type=str, default=r"./", metavar="str",
@@ -30,6 +30,8 @@ parser.add_argument("-oe", "--output_extension", type=str, default="webp", metav
                     help="extension type of resized image (default: webp)")
 parser.add_argument("-ee", "--excluded_extensions", action='append', default=["py"], metavar="list of strings",
                     help="list of str that make consists of file extensions to ignore in img_path dir (default: [\"py\"])")
+parser.add_argument("-r", "--rotate_image", type=bool, default=False, metavar="bool",
+                    help="bool option to rotate image by $-90\deg$ (default: False)")
 args = parser.parse_args()
 
 def make_output_dir_if_it_DNE(output_dir):
@@ -58,6 +60,9 @@ def get_final_output_name(filename, output_dir, output_extension):
 def save_resized_image(image, final_output_name, output_extension):
     image.save(final_output_name, format=output_extension)
 
+def rotate_image(image):
+    return image.rotate(-90, Image.NEAREST, expand = 1) 
+
 if __name__ == "__main__":
     output_extension = args.output_extension
     make_output_dir_if_it_DNE(args.output_dir)
@@ -66,4 +71,6 @@ if __name__ == "__main__":
         img = Image.open(filename)
         new_image = resize_image(img, scale_factor=args.scale_factor)
         final_output_name = get_final_output_name(filename, output_dir=args.output_dir, output_extension=output_extension)
+        if args.rotate_image:
+            new_image = rotate_image(new_image)
         save_resized_image(new_image, final_output_name, output_extension)
