@@ -30,7 +30,7 @@ parser.add_argument("-oe", "--output_extension", type=str, default="webp", metav
                     help="extension type of resized image (default: webp)")
 parser.add_argument("-ee", "--excluded_extensions", action='append', default=["py"], metavar="list of strings",
                     help="list of str that make consists of file extensions to ignore in img_path dir (default: [\"py\"])")
-parser.add_argument("-r", "--rotate_image", type=bool, default=False, metavar="bool",
+parser.add_argument("-r", "--rotate_image", type=int, default=False, metavar="int",
                     help="bool option to rotate image by $-90\deg$ (default: False)")
 args = parser.parse_args()
 
@@ -60,8 +60,8 @@ def get_final_output_name(filename, output_dir, output_extension):
 def save_resized_image(image, final_output_name, output_extension):
     image.save(final_output_name, format=output_extension)
 
-def rotate_image(image):
-    return image.rotate(-90, Image.NEAREST, expand = 1) 
+def rotate_image(image, degrees_to_rotate_by=-90):
+    return image.rotate(degrees_to_rotate_by, Image.NEAREST, expand = 1) 
 
 if __name__ == "__main__":
     output_extension = args.output_extension
@@ -72,5 +72,5 @@ if __name__ == "__main__":
         new_image = resize_image(img, scale_factor=args.scale_factor)
         final_output_name = get_final_output_name(filename, output_dir=args.output_dir, output_extension=output_extension)
         if args.rotate_image:
-            new_image = rotate_image(new_image)
+            new_image = rotate_image(new_image, args.rotate_image)
         save_resized_image(new_image, final_output_name, output_extension)
