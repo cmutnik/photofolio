@@ -69,4 +69,4 @@ gallery2:
 	</section>
 
 
-Photography by: <a href="https://unsplash.com/photos/j0g8taxHZa0">UNSPLASH</a>
+Photography by: <a href="https://www.instagram.com/cmutnik/">CMUTNIK</a>
