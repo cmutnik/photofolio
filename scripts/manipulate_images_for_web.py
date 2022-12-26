@@ -2,7 +2,7 @@
 """Script for resizing and formatting images, to better display on web.
     Example use case:
         ```py
-        python resize.py -i test/* -o test/. -oe webp -sf 0.5
+        python manipulate_images_for_web.py -i test/* -o test/. -oe webp -sf 0.5
         ```
     - convert all images in `test/`
     - store the outputs in `test/`
