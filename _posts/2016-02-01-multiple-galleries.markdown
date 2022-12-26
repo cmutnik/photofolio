@@ -9,25 +9,25 @@ date: "2016-02-01"
 header-img: "img/postcover/pc007.jpg"
 comments: "true"
 gallery1: 
-  - image_path: /img/galleries/g01/bg1.jpg
-    image-caption: IMAGE TITLE
-    image-copyright: © photofolio
-  - image_path: /img/galleries/g01/bg2.jpg
-    image-caption: IMAGE TITLE
-    image-copyright: © photofolio
-  - image_path: /img/galleries/g01/bg3.jpg
-    image-caption: IMAGE TITLE
-    image-copyright: © photofolio 
+  - image_path: /img/galleries/gallery01_big_island/DB9A9887_resized.webp
+    caption: Pahoehoe Flow
+    copyright: © takophotos
+  - image_path: /img/galleries/gallery01_big_island/DB9A3786_resized.webp
+    caption: Peepee Falls and Boiling Pots
+    copyright: © takophotos
+  - image_path: /img/galleries/gallery01_big_island/IMG-20211209-WA0018_resized.webp
+    caption: Milkyway lava, Galactic Bulge.
+    copyright: © takophotos
 gallery2: 
-  - image_path: /img/galleries/g02/bg1.jpg
-    image-caption: IMAGE TITLE
-    image-copyright: © photofolio
-  - image_path: /img/galleries/g02/bg2.jpg
-    image-caption: IMAGE TITLE
-    image-copyright: © photofolio
-  - image_path: /img/galleries/g02/bg3.jpg
-    image-caption: IMAGE TITLE
-    image-copyright: © photofolio 
+  - image_path: /img/galleries/gallery10_honu/20210610_143845_046_resized.webp
+    caption: Turtle or table?
+    copyright: © takophotos
+  - image_path: /img/galleries/gallery10_honu/GC6A6079_resized.webp
+    caption: Baby guy
+    copyright: © takophotos
+  - image_path: /img/galleries/gallery10_honu/DB9A2772_resized.webp
+    caption: Flapping along
+    copyright: © takophotos
 ---
 
 
