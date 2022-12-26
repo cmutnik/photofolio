@@ -13,19 +13,19 @@ comments: false
 ---
 
 <p>Scientific writing example can be found in <a href="https://github.com/cmutnik/comp_phys305">my computational physics repo</a>.</p>
+<br>
+<p>Hosted webpage for this course <a href="https://cmutnik.github.io/comp_phys305/">here</a>.</p>
+<br>
+<img src="https://github.com/cmutnik/photofolio/tree/gh-pages/img/phys305_final_paper/final_pg1.png">
 
-> Hosted webpage for this course <a href="https://cmutnik.github.io/comp_phys305/">here</a>.
+<img src="https://github.com/cmutnik/photofolio/tree/gh-pages/img/phys305_final_paper/final_pg2.png">
 
-<img src="/img/phys305_final_paper/final_pg1.png">
+<img src="https://github.com/cmutnik/photofolio/tree/gh-pages/img/phys305_final_paper/final_pg3.png">
 
-<img src="/img/phys305_final_paper/final_pg2.png">
+<img src="https://github.com/cmutnik/photofolio/tree/gh-pages/img/phys305_final_paper/final_pg4.png">
 
-<img src="/img/phys305_final_paper/final_pg3.png">
+<img src="https://github.com/cmutnik/photofolio/tree/gh-pages/img/phys305_final_paper/final_pg5.png">
 
-<img src="/img/phys305_final_paper/final_pg4.png">
+<img src="https://github.com/cmutnik/photofolio/tree/gh-pages/img/phys305_final_paper/final_pg6.png">
 
-<img src="/img/phys305_final_paper/final_pg5.png">
-
-<img src="/img/phys305_final_paper/final_pg6.png">
-
-<img src="/img/phys305_final_paper/final_pg7.png">
+<img src="https://github.com/cmutnik/photofolio/tree/gh-pages/img/phys305_final_paper/final_pg7.png">
